@@ -1,0 +1,42 @@
+ul, li {
+    display:block;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: gray;
+}
+
+.menu-bar {
+    background: white;
+    color:#212121;
+    padding: 20px 0;
+}
+
+.logo a{
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 25px;
+    color:#212121;
+}
+
+.logo a:hover {
+    text-decoration: none;
+    color: #868686;
+}
+
+.menu__item {
+    margin-left: 37px;
+}
+.menu__item a {
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 20px;
+    color: #212121;
+}
+
+.menu__item a:hover {
+    text-decoration: none;
+    color: #868686;
+}
