@@ -5,7 +5,12 @@ ul, li {
 }
 
 body {
-    background: gray;
+    font-family: "Open Sans";
+    color: #212121;
+}
+h1,h2,h3,h4,h5,p{
+    padding: 0;
+    margin: 0;
 }
 
 .menu-bar {
@@ -15,7 +20,6 @@ body {
 }
 
 .logo a{
-    font-family: "Open Sans";
     font-weight: 700;
     font-size: 25px;
     color:#212121;
@@ -30,7 +34,6 @@ body {
     margin-left: 37px;
 }
 .menu__item a {
-    font-family: "Open Sans";
     font-weight: 600;
     font-size: 20px;
     color: #212121;
@@ -39,4 +42,64 @@ body {
 .menu__item a:hover {
     text-decoration: none;
     color: #868686;
+}
+
+/* HEADER */
+.header {
+    color:white;
+    text-align: center;
+    padding: 180px 0;
+    background-size: cover;
+    background-position: 0 100%;
+    background-image: url(../img/Header.png);
+}
+.header__title {
+    font-size: 55px;
+
+}
+.header__text {
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+.button {
+    padding: 10px 25px;
+    margin: 0 10px;
+    color: white;
+}
+.button_empty {
+    background: transparent;
+    border: 2px solid white;
+}
+.button_full {
+    background: #008a7c;
+    border: 2px solid #008a7c;
+}
+.button_empty:hover,
+.button_full:hover {
+    border: 2px solid white;
+    background: #008a7c;
+}
+/* About */
+.about {
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 125px;
+}
+.about__title {
+    padding-bottom: 25px;
+    font-size: 30px;
+    font-weight: 700;
+}
+.about__text {
+    font-size: 15px;
+    margin-bottom: 120px;
+}
+.about_h3 {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.about_text {
+    font-size: 15px;
 }
