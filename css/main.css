@@ -62,23 +62,18 @@ h1,h2,h3,h4,h5,p{
     margin-bottom: 100px;
 }
 .button {
+    text-transform: uppercase;
     padding: 10px 25px;
     margin: 0 10px;
     color: white;
-}
-.button_empty {
-    background: transparent;
-    border: 2px solid white;
-}
-.button_full {
     background: #008a7c;
     border: 2px solid #008a7c;
 }
-.button_empty:hover,
-.button_full:hover {
+.button:hover {
+    background: transparent;
     border: 2px solid white;
-    background: #008a7c;
 }
+
 /* About */
 .about {
     text-align: center;
@@ -94,13 +89,13 @@ h1,h2,h3,h4,h5,p{
     font-size: 15px;
     margin-bottom: 120px;
 }
-.about_h3 {
+.about__h3 {
     padding-top: 40px;
     padding-bottom: 20px;
     font-size: 20px;
     font-weight: 600;
 }
-.about_text {
+.about__p {
     font-size: 15px;
 }
 /* SERVICES */
@@ -120,10 +115,10 @@ h1,h2,h3,h4,h5,p{
     color: white;
     box-shadow: 0px 12px 12px -3px rgba(0,0,0,0.32);
 }
-.serv__card i {
+.card__icon {
     font-size: 50px;
 }
-.serv__card button {
+.serv__button {
     margin-top: 45px;
     background: transparent;
     border: 2px solid #212121;
@@ -132,7 +127,41 @@ h1,h2,h3,h4,h5,p{
     font-weight: 600;
     letter-spacing: 2px;
 }
-.serv__card:hover button {
+.serv__card:hover .serv__button {
     border: 2px solid white;
     color: white;
+}
+
+/* PORTFOLIO */
+.portfolio {
+    text-align: center;
+    padding: 125px 0;
+}
+.portfolio button:hover,
+.focused {
+    color: #212121;
+    border: 2px solid #008a7c;
+    background:transparent;
+}
+.portfolio img {
+    margin-bottom:30px;
+}
+.filter{
+    padding: 120px 0;
+}
+div[filter]:hover img {
+    filter:brightness(50%);
+}
+.img__text {
+    display: none;
+}
+div[filter]:hover .img__text {
+    display: block;
+    width: 100%;
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 0 ;
+    z-index: 3;
+    text-align: center;
 }
