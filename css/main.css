@@ -165,3 +165,71 @@ div[filter]:hover .img__text {
     z-index: 3;
     text-align: center;
 }
+
+/* Pricing */
+.pricing {
+    background: #f0f1f1;
+    padding-top: 120px;
+    padding-bottom: 125px;
+    text-align: center;
+}
+.price {
+    background: white;
+    width: 350px;
+    margin: 10px auto;
+}
+.price:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.32);
+}
+.price__head {
+    color:white;
+    padding-top: 45px;
+    padding-bottom: 65px;
+    background-image: url(..//img/price.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 211px;
+}
+.price__head {
+    font-size: 50px;
+}
+.price__head p {
+    font-size: 25px;
+}
+.price__head sup {
+    vertical-align: middle;
+    font-size: 25px;
+}
+.price__head sub {
+    vertical-align: middle;
+    font-size: 17px;
+}
+.price__body {
+    font-size: 17px;
+}
+.price__body li {
+    margin: 0 auto;
+    padding-top: 36px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #bfbfbf;
+    max-width: 170px;
+}
+.price__footer {
+    padding: 60px 0;
+}
+.price__footer button {
+    letter-spacing: 1px;
+    font-size: 20px;
+    background: transparent;
+    border: 2px solid #212121;
+    width: 180px;
+    height: 60px;
+    font-weight: 600;   
+}
+.price__footer button:hover {
+    text-transform: uppercase;
+    background: #008a7c;
+    color: white;
+    border: none;
+}
